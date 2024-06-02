@@ -1,0 +1,18 @@
+<template>
+        <lightning-card title="Infinite Scroll on Opportunity Object">
+            <div class="slds-p-horizontal_small table">
+                <lightning-datatable 
+                    key-field="Id"
+                    data={data}
+                    columns={columns}
+                    hide-checkbox-column="true"
+                    is-loading={loading}
+                    enable-infinite-loading
+                    onloadmore={loadTrigger}
+                    show-row-number-column="true"
+                    load-more-offset="5"
+                    >
+                </lightning-datatable>                    
+            </div>            
+        </lightning-card>       
+</template>
